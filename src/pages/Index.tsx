@@ -108,7 +108,7 @@ export default function Index() {
             <div className="w-7 h-7 rounded bg-primary flex items-center justify-center">
               <Icon name="Shield" size={14} className="text-white" />
             </div>
-            <span className="font-semibold text-sm tracking-wide">SecureNet <span className="text-muted-foreground font-normal">VPN</span></span>
+            <span className="font-semibold text-sm tracking-wide">Medoed<span className="text-muted-foreground font-normal">VPN</span></span>
           </div>
 
           <nav className="hidden md:flex items-center gap-1">
@@ -175,7 +175,7 @@ export default function Index() {
                   <span className="text-primary">корпоративных данных</span>
                 </h1>
                 <p className="text-muted-foreground max-w-xl mb-7 leading-relaxed">
-                  SecureNet VPN обеспечивает шифрование трафика, защиту от утечек и высокую скорость для удалённых команд. Оптимизировано для минимальной задержки и максимальной производительности.
+                  MedoedVPN обеспечивает шифрование трафика, защиту от утечек и высокую скорость для удалённых команд. Оптимизировано для минимальной задержки и максимальной производительности.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <button
@@ -509,7 +509,7 @@ export default function Index() {
               <div>
                 <div className="text-sm font-medium mb-1">SLA 99.97% — Корпоративная гарантия</div>
                 <div className="text-xs text-muted-foreground leading-relaxed">
-                  Если аптайм упадёт ниже гарантированного уровня, мы компенсируем время простоя. Мониторинг в реальном времени на <span className="text-primary">status.securenet.ru</span>
+                  Если аптайм упадёт ниже гарантированного уровня, мы компенсируем время простоя. Мониторинг в реальном времени на <span className="text-primary">status.medoedvpn.ru</span>
                 </div>
               </div>
             </div>
@@ -522,7 +522,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-2">
           <div className="flex items-center gap-2 text-xs text-muted-foreground">
             <Icon name="Shield" size={11} />
-            <span>SecureNet VPN © 2024 — Корпоративная лицензия</span>
+            <span>MedoedVPN © 2024 — Корпоративная лицензия</span>
           </div>
           <div className="text-xs text-muted-foreground font-mono-vpn">v4.2.1 • TLS 1.3 • AES-256-GCM</div>
         </div>
