@@ -5,6 +5,7 @@ import HomeSection from "@/components/vpn/HomeSection";
 import ConnectionSection from "@/components/vpn/ConnectionSection";
 import ServersSection from "@/components/vpn/ServersSection";
 import SupportSection from "@/components/vpn/SupportSection";
+import LoginPage from "@/components/vpn/LoginPage";
 
 const navItems: { id: Section; label: string; icon: string }[] = [
   { id: "home", label: "Главная", icon: "LayoutDashboard" },
@@ -14,10 +15,15 @@ const navItems: { id: Section; label: string; icon: string }[] = [
 ];
 
 export default function Index() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [activeSection, setActiveSection] = useState<Section>("home");
   const [connected, setConnected] = useState(false);
   const [selectedServer, setSelectedServer] = useState<Server>(servers[0]);
   const [connecting, setConnecting] = useState(false);
+
+  if (!isLoggedIn) {
+    return <LoginPage onLogin={() => setIsLoggedIn(true)} />;
+  }
 
   const handleConnect = () => {
     if (connected) {
